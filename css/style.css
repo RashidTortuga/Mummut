@@ -1,0 +1,96 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Fonts */
+@font-face {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto Regular"), url("/fonts/Roboto-Regular.woff") format("woff");
+}
+:root {
+  --color-primary-white: #ffffff;
+  --color-primary-black: #191919;
+  --color-secondary-gray: #23293c;
+  --color-secondary-blue: #303851;
+  --color-secondary-light-gray: #cccccc;
+}
+/* Base */
+body {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  color: var(--color-primary-white);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;}
+/*Hero-section  */
+.hero-container {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  height: 800px;
+}
+.woman-half {
+  height: 800px;
+  width: 100%;
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(25, 25, 25, 0.78) 100%,
+      rgba(25, 25, 25, 0.6) 100%,
+      rgba(25, 25, 25, 0) 100%
+    ),
+    url(/images/hero_woman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.people-half {
+  position: relative;
+  height: 800px;
+  width: 100%;
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(25, 25, 25, 0.78) 100%,
+      rgba(25, 25, 25, 0.6) 100%,
+      rgba(25, 25, 25, 0) 100%
+    ),
+    url(/images/hero_people.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-nav {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.free-shipping {
+  font-size: 10px;
+  top: 11px;
+  left: 50%;
+}
+.menu {
+  font-size: 14px;
+  top: 60px;
+  left: 70px;
+}
+.search {
+  font-size: 14px;
+  top: 60px;
+  right: 70px;
+}
