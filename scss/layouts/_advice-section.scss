@@ -1,0 +1,35 @@
+.advice-section {
+  position: relative;
+  display: flex;
+  gap: 225px;
+  justify-content: center;
+
+  &__title {
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--color-primary-black);
+    margin: 0 32px;
+    max-width: 340px;
+  }
+  &__cards-wrap {
+    display: flex;
+  }
+  &__card {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  &__card-text {
+    z-index: 1;
+    font-size: 20px;
+  }
+}
